@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+       /* div ~ p{
+        color:crimson
+       } */
+        a:hover{
+        color:rgb(213, 228, 3);
+        font-size: 20px; }
+
+        a:active{
+            color:brown;
+        }
+        a:link{
+            text-decoration: none; font-size:larger;
+        }
+        ul{
+            list-style:none; display:flex;
+        }
+        ul li {
+            margin: 20px; border-right: 1px solid grey;
+            padding-right: 20px;
+        }
+    .para{
+        color:burlywood
+    }
+
+    .para::first-letter{
+        background-color: cadetblue;
+    }
+    .para::before{
+        content:"Read More";
+        color:orange;
+        font-size: 20px;
+    }
+    
+        
+</style>
+</head>
+<body>
+    <div class="box"><p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero ea corrupti vel consectetur quasi voluptas sed illum, repellendus, non magnam neque quae laborum id illo, magni maxime est animi!</p>
+        <div>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore explicabo, aperiam ipsa omnis neque perspiciatis, placeat asperiores doloribus maiores nostrum sapiente tempore similique cumque quidem sequi non quibusdam aliquid.</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatum ullam nobis. Molestiae corporis unde ab voluptates suscipit, consequatur, quia sunt molestias nam necessitatibus, eius numquam beatae natus saepe esse!</p>
+
+    <a href="">Visit this link</a>
+    <ul>
+        <li>home</li>
+        <li>services</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li style="border:0">contact</li>
+    </ul>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime beatae sapiente omnis est optio dolores voluptates blanditiis atque placeat exercitationem, molestias nulla quae! Recusandae ullam possimus doloremque reiciendis iure magnam?</p>
+</body>
+</html>
