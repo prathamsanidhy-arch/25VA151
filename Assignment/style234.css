@@ -1,0 +1,99 @@
+/* Make the whole page center the card using flexbox */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+}
+
+.page-container {
+    display: flex;                     /* flexbox container */
+    justify-content: center;           /* center card horizontally */
+    align-items: center;               /* center card vertically */
+    min-height: 100vh;                 /* full viewport height */
+}
+
+/* Student card styling */
+.student-card {
+    background: #ffffff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;            /* stack header, body, footer vertically */
+    gap: 16px;
+}
+
+/* Header: image + basic info side by side */
+.card-header {
+    display: flex;                     /* flexbox row by default */
+    flex-direction: row;               /* items in a row */
+    align-items: center;               /* vertically center image and text */
+    gap: 16px;
+}
+
+.photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4a90e2;
+}
+
+.basic-info h2 {
+    margin: 0 0 4px;
+}
+
+.basic-info p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Body: info shown in column using flexbox */
+.card-body {
+    display: flex;
+    flex-direction: column;            /* stack info rows vertically */
+    gap: 8px;
+}
+
+.info-row {
+    display: flex;                     /* row flexbox */
+    justify-content: space-between;    /* label left, value right */
+    align-items: center;
+    font-size: 14px;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.value {
+    color: #555;
+}
+
+/* Footer: buttons centered using flexbox */
+.card-footer {
+    display: flex;                     /* row flexbox */
+    justify-content: center;           /* center buttons horizontally */
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #4a90e2;
+    color: white;
+}
+
+.btn-secondary {
+    background: #888;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
