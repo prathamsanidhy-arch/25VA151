@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e1e2f;
+  padding: 14px 20px;
+  color: white;
+  position: relative;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 12px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.user-links a {
+  margin-left: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #2e2e3f;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #toggle:checked + .menu-btn + .menu {
+    display: flex;
+  }
+}
